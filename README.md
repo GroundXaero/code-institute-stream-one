@@ -2,43 +2,41 @@
 
 ## Overview
 ### What is this app for?
-This is the final front-end project for Code Institute, it is a website for a fictional 
+This is the final front-end project for Code Institute, it is a website for a fictional carpentry company that does work ranging from projects in the house, the garden, or other site work.
  
 ### What does it do?
- 
-This app will allow users to register and login. Once the users have done that, they'll be able to create items to add to their todo list. Once they've created their todo list, they'll be able to update the status of each item and even delete items!
+This app will allow users to get an introduction to the company and browse through their previous projects to get a feel for the quality of their work.
+
+The user can then check the availability of the company for hiring by reading the "upcoming scheduled work" listings or by entering a specific date, this will also provide details for an estimated cost of the work.
+
+The user may also contact the company more directly about any other inquiries on the contact page via a form.
  
 ### How does it work
- 
-This app uses JSON Web Tokens to authenticate users and keep them logged in. All the data is consumed from an API hosted on Heroku using AngularJS. The site is styled with Bootstrap.
+ This app uses AngularJS for routing, templating, and javascript functionality related to forms and date checking. The site is styled with Bootstrap.
 
 
 ## Features
 ### Existing Features
-- None yet!
+- Home page
  
 ### Features Left to Implement
-- User Based Features
-    - Registration
-    - Login
-    - Logout
-- Todo Based Features
-    - Creating Todo Items
-    - Retrieving Todo Items
-    - Updating Todo Items
-    - Deleting Todo Items
+- Project gallery
+- Booking availability checker
+- Contact form
 
 
 ## Tech Used
 ### Some the tech used includes:
 - [AngularJS](https://angularjs.org/)
-    - We use **AngularJS** to handle page routing, we also use it to make calls to the REST API and build custom directives
+    - We use **AngularJS** to handle page routing, templating, and various functionality.
 - [Bootstrap](http://getbootstrap.com/)
-    - We use **Bootstrap** to give our project a simple, responsive layout
+    - We use **Bootstrap** to give our project a simple, responsive layout.
 - [FontAwesome](https://fontawesome.com)
-    - We use **FontAwesome** to provide the project with a selection of icons to use throughout the design
+    - We use **FontAwesome** to provide the project with a selection of icons to use throughout the design.
+- [Google Fonts](https://fonts.google.com)
+    - We use **Google Fonts** to give our project easy access to more varied font choices that don't need to be installed on the user's device.
 - [npm](https://www.npmjs.com/)
-    - We use **npm** to help manage some of the dependencies in our application
+    - We use **npm** to help manage some of the dependencies in our application.
 
 
 ## Contributing
