@@ -1,0 +1,27 @@
+{
+  "name": "code-institute-stream-one",
+  "version": "1.0.0",
+  "description": "Final front-end project for Code Institute",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GroundXaero/code-institute-stream-one.git"
+  },
+  "author": "Andy Cormack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GroundXaero/code-institute-stream-one/issues"
+  },
+  "homepage": "https://github.com/GroundXaero/code-institute-stream-one#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-route": "^1.6.9",
+    "angular-storage": "0.0.15",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}

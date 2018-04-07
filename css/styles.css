@@ -1,0 +1,225 @@
+/* Style Guide
+-------------------------------------------------- */
+
+/* Fonts 
+Header Text - The Queen
+Body Text - Roboto?
+*/
+
+/* Colours 
+Grey - 8f8f8f
+Charcoal - 191919
+
+Brown - bf8856
+Light Brown - cdad93
+Pale Brown - e3d4c4
+
+Deep Blue - 1c1d24
+Pale Blue - a5a9bc
+*/
+
+:root {
+    /* Colours */
+    --colour-light-grey: #aaa;
+    --colour-grey: #8f8f8f;
+    --colour-charcoal: #191919;
+    --colour-brown: #bf8856;
+    --colour-light-brown: #cdad93;
+    --colour-pale-brown: #e3d4c4;
+    --colour-deep-blue: #1c1d24;
+    --colour-pale-blue: #a5a9bc;
+    /* Fonts */
+    --font-serif: 'Playfair Display SC', serif;
+    --font-sans-serif: 'Titillium Web', sans-serif;
+}
+
+.text-pale-blue {
+    color: var(--colour-pale-blue);
+}
+
+.text-light-brown {
+    color: var(--colour-light-brown);
+}
+
+/* Global Styles
+-------------------------------------------------- */
+
+body {
+    font-family: var(--font-sans-serif);
+    color: var(--colour-grey);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-serif);
+    color: var(--colour-light-brown);
+}
+
+a {
+    opacity: 1;
+    color: var(--colour-brown);
+}
+
+a:hover,
+a:focus {
+    color: var(--colour-brown);
+    opacity: 0.75;
+}
+
+.larger-text {
+    font-size: 120%;
+}
+
+.smaller-text {
+    font-size: 80%;
+}
+
+/* Designy lines for headers */
+
+.header-lines {
+    position: relative;
+}
+
+.header-lines:before {
+    content: '';
+    position: absolute;
+    right: calc(100% + 1.5rem);
+    top: 45%;
+    width: 7rem;
+    height: 0.5rem;
+    border-top: 1px solid var(--colour-brown);
+    border-bottom: 1px solid var(--colour-brown);
+    transform: skewX(50deg);
+    opacity: 0.6;
+}
+
+.header-lines:after {
+    content: '';
+    position: absolute;
+    left: calc(100% + 1.5rem);
+    top: 45%;
+    width: 7rem;
+    height: 0.5rem;
+    border-top: 1px solid var(--colour-brown);
+    border-bottom: 1px solid var(--colour-brown);
+    transform: skewX(-50deg);
+    opacity: 0.6;
+}
+
+/* Navbar
+-------------------------------------------------- */
+
+/* Logo */
+
+.navbar-brand {
+    color: var(--colour-brown) !important;
+    opacity: 0.75;
+}
+
+.navbar-brand-text {
+    position: relative;
+    font-family: var(--font-serif);
+    margin-left: 0.25em;
+}
+
+.navbar-brand-text:after {
+    content: '';
+    position: absolute;
+    bottom: -0.3em;
+    left: 5%;
+    right: 5%;
+    height: 1px;
+    background-color: var(--colour-light-grey);
+}
+
+/* Background */
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Social media icons
+-------------------------------------------------- */
+
+.social-media-icon {
+    font-size: 2.5em;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.social-media-icon:hover {
+    opacity: 1;
+}
+
+/* Hero
+-------------------------------------------------- */
+
+.hero {
+    position: relative;
+}
+
+.hero-full {
+    height: 100vh;
+}
+
+.hero-full .hero-image {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(25, 25, 25, 0.93);
+}
+
+.hero-overlay-content {
+    text-align: center;
+    max-width: 100vw;
+}
+
+.hero-overlay-content,
+.hero-text {
+    color: var(--colour-pale-brown);
+}
+
+.hero-logo {
+    position: relative;
+}
+
+.hero-logo .header-lines {
+    display: inline-block;
+}
+
+.hero-logo .header-lines:before,
+.hero-logo .header-lines:after {
+    width: 10rem;
+}
+
+/* Photo thumbnails 
+-------------------------------------------------- */
+
+.photo-thumbnail {
+    max-width: 90%;
+    border: 1em solid white;
+    box-shadow: 0 0.3em 1em rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+footer {
+    background-color: var(--colour-deep-blue);
+}
