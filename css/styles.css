@@ -52,7 +52,7 @@ body {
 h1,
 h2,
 h3,
-h4,
+h3,
 h5 {
     font-family: var(--font-serif);
     color: var(--colour-light-brown);
@@ -159,13 +159,15 @@ a:focus {
 
 .hero {
     position: relative;
+    height: 22em;
+    max-height: 100vh;
 }
 
 .hero-full {
     height: 100vh;
 }
 
-.hero-full .hero-image {
+.hero .hero-image {
     object-fit: cover;
     object-position: center;
     height: 100%;
@@ -211,6 +213,7 @@ a:focus {
 -------------------------------------------------- */
 
 .photo-thumbnail {
+    display: block;
     max-width: 90%;
     border: 1em solid white;
     box-shadow: 0 0.3em 1em rgba(0, 0, 0, 0.15);
